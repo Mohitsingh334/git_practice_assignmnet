@@ -1,3 +1,4 @@
+
 function checkPrime(num){
     if(num<2)return false;
 
@@ -9,3 +10,4 @@ function checkPrime(num){
 
 let ans = checkPrime(41);
 console.log(ans);
+
