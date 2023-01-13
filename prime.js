@@ -1,13 +1,11 @@
-function prime(){
-let count=1;
-for(let i=0;i<num;i++){
-if(num%i==1){
-count++;
+function checkPrime(num){
+    if(num<2)return false;
+
+    for(let i = 2; i<= Math.sqrt(num);i++){
+        if(num%i==0)return false;
+    }
+    return true;
 }
-}
-let result=prime()
-if(count==3){
-console.log("Prime");
-}else{
-console.log("Not a prime");
-}
+
+let ans = checkPrime(41);
+console.log(ans);
