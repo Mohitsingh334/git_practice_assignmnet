@@ -1,13 +1,14 @@
-function prime(){
-let count=1;
+function prime(num){
+let count=0;
 for(let i=0;i<num;i++){
-if(num%i==1){
+if(num%i==0){
 count++;
 }
 }
-let result=prime()
-if(count==3){
-console.log("Prime");
+if(count==2){
+console.log("prime");
 }else{
 console.log("Not a prime");
 }
+
+prime(14)
